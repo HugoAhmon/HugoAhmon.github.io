@@ -1,0 +1,155 @@
+/* Reset e configurações globais */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  line-height: 1.6;
+  padding: 2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-align: justify;
+}
+
+/* Estilo do banner de desenvolvedor */
+.banner-dev {
+  width: 100%;
+  /*background-color: #ececec;*/
+  text-align: center;
+  padding: 0.5rem;
+  /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);*/
+}
+
+.banner-dev img {
+  max-width: 300px;
+  height: auto;
+  display: inline-block;
+}
+
+
+/* Modo Claro (Dark Mode invertido) */
+.dark-mode {
+  background-color: #ffffff;
+  color: #121212;
+}
+
+/* Elementos principais */
+header, section, footer {
+  max-width: 800px;
+  margin: auto;
+  padding: 2rem 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+header.show, section.show, footer.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+h1, h2 {
+  color: #00bcd4;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1.2rem;
+  list-style: disc;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #00bcd4;
+  color: white;
+  font-weight: bold;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0097a7;
+}
+
+/* Botão scroll-to-top */
+#scrollToTopBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  padding: 0.8rem 1.2rem;
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+  z-index: 999;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  transition: background-color 0.3s;
+}
+
+#scrollToTopBtn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+  body {
+    padding: 1rem;
+  }
+
+  header, section, footer {
+    padding: 1.5rem 0;
+  }
+
+  button {
+    width: 100%;
+    font-size: 1rem;
+  }
+}
+
+/* Animação de entrada */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Aplicando a animação aos elementos */
+header, section, footer {
+  animation: fadeInUp 0.6s ease forwards;
+} 
+
+/* Links e imagens */
+a {
+  color: #00bcd4;
+  text-decoration: none;
+} 
+
+a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9em;
+  color: #777;
+  margin-top: 40px;
+  border-top: 10px solid #00bcd4;
+  padding-top: 1rem;
+}
