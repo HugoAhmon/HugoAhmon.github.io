@@ -3,152 +3,525 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Meu Portfólio Profissional</title>
+  <title>Hugo Pacheco — Automation Engineer</title>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <button id="darkModeToggle">🌙 Alternar Modo</button>
-  
-  <div class="banner-dev">
-    <img src="img/em_desenvolvimento.jpg" alt="Em desenvolvimento" />
-    <p>Página em desenvolvimento</p>
-  </div>
 
-  <header>
-    <h1>Hugo Pacheco</h1>
-    <p>Engenheiro de Automação | Desenvolvedor de Software</p>
-  </header>
+  <!-- ─── TOPBAR ─── -->
+  <nav id="topbar">
+    <div class="logo">HP_PORTFOLIO</div>
+    <div class="topbar-controls">
+      <button class="ctrl-btn active" id="langPT" onclick="setLang('pt')">PT</button>
+      <button class="ctrl-btn" id="langEN" onclick="setLang('en')">EN</button>
+      <button class="ctrl-btn" id="themeToggle" onclick="toggleTheme()">☀</button>
+    </div>
+  </nav>
 
-  <section>
-    <h2>Sobre Mim</h2>
-        <p>Ao final do ano me formo em Engenharia de Controle e Automação, com experiência em desenvolvimento de soluções industriais utilizando inversores WEG MVW3000 e CFW11, SoftPLC, protocolos industriais e SCADA. Atuo com foco em aplicações como múltiplas bombas, mineração, HVAC e controle vetorial e escalar.
-           Experiência de 10 anos na área elétrica, com atuação nas áreas de instrumentação, automação, projetos, manutenção e confiabilidade. Atualmente trabalho como Desenvolvedor de Software na WEG Drives, no desenvolvimentos de softwares para aplicações utilziando inversores de media e baixa tensão.
-           Diversos Treinamentos na área elétrica realizados, além de treinamentos específicos voltados para normas de segurança do trabalho (NR’s), Food Safety (Segurança de Alimentos), PSM (Process safety management), além de ferramentas como o 5S.
-           Elaboração de projetos elétricos industriais e prediais com o uso do software AutoCAD. Coordenação de equipes de montagem e manutenção elétrica em plantas industriais. Vivência em empresa multinacional na área de manutenção elétrica, com domínio em parametrização de inversores de frequência, soft-starter, partidas inteligentes, redes industriais (Ethernet, profibus, modbus, controlnet).
-           Tenho paixão pela área de AEI (Automação, elétrica e instrumentação), continuo sempre estudando e me atualizando com o objetivo de ampliar meus conhecimentos para dimensionar, projetar e executar projetos com segurança.
-        </p>
-  </section>
-
-  <section>
-    <h2>Formação Acadêmica</h2>
-    <ul>
-      <li>Pós-Graduação
-        <ul>
-          <li>Engenharia de Automação - UniSenai, 06/2023 – 12/2024</li>
-          <li>Engenharia da Computação - UNINTER, 01/2022 – 12/2022.</li>
-        </ul>
-      </li>
-      <li>Graduação
-        <ul>
-          <li>Engenharia de Controle e Automação - UAM, 02/2021 - 12/2025</li>
-          <li>Tecnologia em Manutenção Industrial - UTFPR, 08/2017 - 12/2021</li>
-          <li>Tecnologia em Processos Gerenciais - UniCesumar, 02/2020 - 07/2021</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Idiomas</h2>
-    <ul>
-      <li>Português (BR): Nativo</li>
-      <li>Inglês: B2 - Iniciante (Conversação, Leitura e Escrita)</li>
-      <li>Espanhol: A1 - Iniciante (Conversação, Leitura e Escrita)</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Experiência Profissional</h2>
-    <ul>
-      <li><strong>Jan/2025 até o momento - WEG Drives: Desenvolvedor de Software S.</strong>
-        <ul>
-          <li>Desenvolvimentos de softwares (programação em SoftPLC e CodeSys) para aplicações em inversores de frequência.</li>
-          <li>Desenvolvimento de interfaces (IHM) para aplicações.</li>
-          <li>Realização de documentação dedicada à clientes, tais como: Mapa de Comunicação e Manual do Usuário.</li>
-          <li>Testes práticos das aplicações para constatação do desenvolvimento e quando necessário inspeção com o cliente nas línguas, Português-br, Inglês e Espanhol.</li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li><strong>Out/2022 até Jan/2025 - RGA Componentes Elétricos: Projetista de Software.</strong>
-        <ul>
-          <li>Desenvolvimentos de softwares (programação em CLP) de máquinas para automação industrial, usando software DELTA, TIAPortal e RockWell. Para programação de IHM softwares DELTA, Weintek entre outros.</li>
-          <li>Parametrização de Inversores de Frequência e SoftStart como WEG, ABB, Danfoss. Aplicações em Servos da DELTA.</li>
-          <li>Experiência na comunicação entre CLPs e supervisórios (ScadaBR, InduSoft) e interfaces como Node-RED, utilizando dashboards em Grafana e banco de dados tais como: InfluxDB e MySQL para visualização de dados em tempo real. Familiaridade com desenvolvimento de códigos em JavaScript (JS) para manipulação e envio de dados em formato JSON, além de trabalhos em HTML, PHP e CSS para interfaces web.</li>
-          <li>Domínio do uso de containers Docker para implantação e gestão de aplicações em ambientes controlados, otimizando o gerenciamento e a manutenção do sistema através do Portainer.IO para simplificação da administração de containers.</li>
-          <li>o	Projetos elétricos completo contendo (lista de materiais, layout (mecânica), projeto elétrico, leitura e interpretação) desenvolvidos em software EPLAN – Eletric P8.</li>
-          <li>Prestação de Serviço para clientes e Startups.</li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li><strong>Mai/2022 até Out/2022 - CoolSeed: Desenhista Projetista Elétrico.</strong>
-        <ul>
-          <li>Leitura, interpretação e desenho de projetos elétricos dos equipamentos produzidos pela empresa (Máquinas de Pós-Colheita e Secadores) e residencial/predial (barracões), layouts de painéis elétricos das máquinas e infraestruturas para manual de instalação, usando AutoCad e SolidWorks.</li>
-          <li>Prestação de Serviço Técnico para clientes e Técnicos Autorizados da empresa.</li>
-          <li>Automação dos equipamentos usando CLP da empresa WEG usando TPW_PCLINK e para programação da IHM Weintek Easybuilder Pro e 8000.</li>
-          <li>Parametrização de Inversores de Frequência e SoftStart.</li>
-        </ul>
-      </li>
-    </ul>
-    <ul>
-      <li><strong>Nov/2016 até Mai/2022 - Lar Foods: Eletricista de Montagem e Manutenção Elétrica I.</strong>
-        <ul>
-          <li>Nov/2020 até Mar/2022 – Eletricista de Manutenção e Montagem I: Todas as funções anteriores e projetos de automação em CLP usando os softwares da Siemens e Alen-Bradley. Para o desenvolvimento das IHM’s utilizando os softwares Weintek e Siemens TIA Portal e LOGO.</li>
-          <li>Parametrização de Inversores de Frequência e SoftStart das linhas: WEG, Schneider, Danfoss, ABB.</li>
-          <li>Fev/2017 até Nov/2020 – Auxiliar de Eletricista: Auxiliar na gestão da equipe, envolvendo demandas de trabalhos e orçamentos de materiais diversos tais como toda a infraestrutura (elétrica) quanto equipamentos como SoftStarts, Inversores, CLP/IHM, Disjuntores entre outros e compra de materiais usando sistema interno SICOP. Desenhos de projetos elétricos e mecânicos de máquinas e painéis de alimentação, distribuição e comando em plataforma AutoCAD, ZWCAD, DraftSight e SolidWorks. Montagem de painéis elétricos, de rede (rack’s) e telefônicos. Análise das máquinas para melhorias visando atender as NR’s (principalmente NR-10 e 12), planejando toda sua nova instrutura, quando adequações da NR-12 ou quando necessidade de infraestrutura no forro ou aérea, cabeamento, projeto elétrico e finalizando com seu startup. Solda em geral para a fabricação de suportes e infraestruturas utilizando TIG (INOX), MIG/MAG e Eletrodo Revestido (Elétrica).</li>
-          <li>Nov/2016 até Fev/2017 - Auxiliar de Eletricista: Montagem de painéis elétricos, de estruturas (eletrocalhas) e passagem de cabo.</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Exemplos de Projetos Desenvolvidos</h2>
-    <ul>
-      <li>Engenheiro de Aplicação - WEG Drives
-        <ul>
-          <li>Desenvolvimento de soluções com inversores MVW3000 e CFW11</li>
-          <li>Controle de esteiras com Load Sharing</li>
-          <li>Injeção de Dupla Frequência para testes de motores</li>
-        </ul>
-      </li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Habilidades Técnicas</h2>
-    <ul>
-      <li><strong>PLC:</strong> Siemens, Allen-Bradley, Delta, Schneider, Codesys, Altus</li>
-      <li><strong>SCADA:</strong> InduSoft, AVEVA, ScadaBR</li>
-      <li><strong>IHM:</strong> Siemens, Allen-Bradley, Delta, Weintek</li>
-      <li><strong>Linguagens:</strong> Ladder, FBD, ST e SFC</li>
-      <li><strong>Protocolos:</strong> Modbus TCP/IP, EtherNet/IP, OPC UA, RS-485, RS-232, CANopen</li>
-      <li><strong>Ferramentas:</strong> Node-RED, Grafana, Docker, Portainer, Wireshark</li>
-      <li><strong>Sistemas:</strong> Linux Server, Windows</li>
-    </ul>
-  </section>
-
-  <section>
-    <h2>Contato</h2>
-    <p>
-      <a href="tel:+5545999936199">📞 +55 45 99993-6199</a><br />
-      <a href="mailto:hugo_ahmon@icloud.com">📧 hugo_ahmon@icloud.com</a><br />
-      <a href="https://www.linkedin.com/in/hugo-ahmon-muniz-pacheco/" target="_blank">
-      <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn" style="width:20px; vertical-align:middle; margin-right:5px;">
-      LinkedIn</a><br />
-      <a href="https://github.com/HugoAhmon" target="_blank">🐙 GitHub</a>
+  <!-- ─── HERO ─── -->
+  <section id="hero">
+    <p class="hero-label"
+       data-pt="Engenheiro & Desenvolvedor"
+       data-en="Engineer & Developer">
+      Engenheiro & Desenvolvedor
     </p>
+    <h1 class="hero-name">Hugo<br><span>Pacheco</span></h1>
+    <p class="hero-title"
+       data-pt="Engenheiro de Automação · Desenvolvedor de Software · 10+ anos em AEI"
+       data-en="Automation Engineer · Software Developer · 10+ years in EIA">
+      Engenheiro de Controle e Automação · Desenvolvedor de Software
+    </p>
+    <div class="hero-tags">
+      <span class="tag">PLC Programming (IEC 61850)</span>
+      <span class="tag">C/C++</span>
+      <span class="tag">Software Embedded</span>
+      <span class="tag">SCADA</span>
+      <span class="tag">Industrial Drives</span>
+      <span class="tag">Docker</span>
+      <span class="tag">Node-RED</span>
+      <span class="tag">WEG</span>
+    </div>
+    <div class="hero-cta">
+      <a href="mailto:hugo_ahmon@icloud.com" class="btn-primary"
+         data-pt="Entrar em Contato"
+         data-en="Get in Touch">
+        Entrar em Contato
+      </a>
+      <a href="https://www.linkedin.com/in/hugo-ahmon-muniz-pacheco/" target="_blank" class="btn-outline">
+        LinkedIn
+      </a>
+    </div>
+    <div class="scroll-hint">
+      <span data-pt="ROLAR" data-en="SCROLL">ROLAR</span>
+      <div class="scroll-line"></div>
+    </div>
   </section>
 
+  <!-- ─── MAIN CONTENT ─── -->
+  <main>
+
+    <!-- 01 — SOBRE MIM -->
+    <div class="section" id="sec-about">
+      <div class="section-header">
+        <span class="section-num">01</span>
+        <h2 class="section-title" data-pt="Sobre Mim" data-en="About Me">Sobre Mim</h2>
+        <div class="section-line"></div>
+      </div>
+      <p class="about-text"
+         data-pt="Formado em <strong>Engenharia de Controle e Automação</strong>, com experiência em desenvolvimento de soluções em automação industrial em geral. Tenho <strong>10 anos de experiência</strong> na área elétrica, 
+         com atuação em instrumentação, automação, projetos elétricos, manutenção e confiabilidade. Atualmente trabalho como <strong>Desenvolvedor de Software na WEG Drives</strong>, desenvolvendo soluções para 
+         aplicações com inversores de média e baixa tensão. Tenho paixão pela área de <strong>AEI (Automação, Elétrica e Instrumentação)</strong> e busco constantemente ampliar meus conhecimentos para dimensionar, 
+         projetar e executar projetos com segurança e excelência.
+
+         Foco na Carreira:
+         Firmware Embarcado | Sistemas de Controle | Automação Industrial | Inversores de Frequência | SCADA | IIoT | Desenvolvimento de Software para Indústria"
+         data-en="Graduated in Control and Automation Engineering, with experience in developing solutions for industrial automation systems. I have 10 years of experience in the electrical field, 
+         working with instrumentation, automation, electrical design, maintenance, and reliability. Currently, I work as a Software Developer at WEG Drives, developing solutions for applications 
+         involving medium- and low-voltage frequency inverters. I am passionate about the E&I field (Electrical, Instrumentation and Automation) and continuously seek to expand my knowledge in 
+         order to design, engineer and implement industrial projects with safety, efficiency and technical excellence.
+        
+         Career Focus:
+         Embedded Firmware | Control Systems | Industrial Automation | Frequency Inverters (VFDs) | SCADA | IIoT | Industrial Software Development">
+        Formado em <strong>Engenharia de Controle e Automação</strong>, com experiência em desenvolvimento de soluções em automação industrial em geral. Tenho <strong>10 anos de experiência</strong> na área elétrica, 
+        com atuação em instrumentação, automação, projetos elétricos, manutenção e confiabilidade. Atualmente trabalho como <strong>Desenvolvedor de Software na WEG Drives</strong>, desenvolvendo soluções para 
+        aplicações com inversores de média e baixa tensão. Tenho paixão pela área de <strong>AEI (Automação, Elétrica e Instrumentação)</strong> e busco constantemente ampliar meus conhecimentos para dimensionar, 
+        projetar e executar projetos com segurança e excelência.
+
+        Foco na Carreira:
+        Firmware Embarcado | Sistemas de Controle | Automação Industrial | Inversores de Frequência | SCADA | IIoT | Desenvolvimento de Software para Indústria
+      </p>
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-num">10+</div>
+          <div class="stat-label" data-pt="Anos de Experiência" data-en="Years of Experience">Anos de Experiência</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-label" data-pt="Formações Acadêmicas" data-en="Academic Qualifications">Formações Acadêmicas</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">2</div>
+          <div class="stat-label" data-pt="Pós-Graduações" data-en="Graduate Degrees">Pós-Graduações</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">3</div>
+          <div class="stat-label" data-pt="Idiomas" data-en="Languages">Idiomas</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 02 — EXPERIÊNCIA -->
+    <div class="section" id="sec-exp">
+      <div class="section-header">
+        <span class="section-num">02</span>
+        <h2 class="section-title" data-pt="Experiência" data-en="Experience">Experiência</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-company">WEG Drives</div>
+            <div class="job-role"
+                 data-pt="Desenvolvedor de Software Sênior"
+                 data-en="Senior Software Developer">
+              Desenvolvedor de Software Sênior
+            </div>
+            <div class="job-period"
+                 data-pt="Jan/2025 — Presente"
+                 data-en="Jan/2025 — Present">
+              Jan/2025 — Presente
+            </div>
+          </div>
+          <ul class="job-list">
+            <li data-pt="Desenvolvimento de softwares em SoftPLC e CoDeSys para aplicações em inversores de frequência"
+                data-en="Software development in SoftPLC and CoDeSys for variable frequency drive applications">
+              Desenvolvimento de softwares em SoftPLC e CoDeSys para aplicações em inversores de frequência
+            </li>
+            <li data-pt="Desenvolvimento de interfaces IHM para aplicações industriais"
+                data-en="Development of HMI interfaces for industrial applications">
+              Desenvolvimento de interfaces IHM para aplicações industriais
+            </li>
+            <li data-pt="Elaboração de documentação técnica: Mapas de Comunicação e Manuais do Usuário"
+                data-en="Technical documentation: Communication Maps and User Manuals">
+              Elaboração de documentação técnica: Mapas de Comunicação e Manuais do Usuário
+            </li>
+            <li data-pt="Testes práticos e inspeção com clientes em PT-BR, EN e ES"
+                data-en="Practical testing and client inspection in PT-BR, EN, and ES">
+              Testes práticos e inspeção com clientes em PT-BR, EN e ES
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-company">RGA Componentes Elétricos</div>
+            <div class="job-role"
+                 data-pt="Projetista de Software"
+                 data-en="Software Designer">
+              Projetista de Software
+            </div>
+            <div class="job-period">Out/2022 — Jan/2025</div>
+          </div>
+          <ul class="job-list">
+            <li data-pt="Programação de CLP com DELTA, TIA Portal e Rockwell para automação industrial"
+                data-en="PLC programming with DELTA, TIA Portal, and Rockwell for industrial automation">
+              Programação de CLP com DELTA, TIA Portal e Rockwell para automação industrial
+            </li>
+            <li data-pt="Integração de CLPs com SCADA (ScadaBR, InduSoft) via Node-RED, Grafana e InfluxDB/MySQL"
+                data-en="PLC integration with SCADA (ScadaBR, InduSoft) via Node-RED, Grafana, and InfluxDB/MySQL">
+              Integração de CLPs com SCADA (ScadaBR, InduSoft) via Node-RED, Grafana e InfluxDB/MySQL
+            </li>
+            <li data-pt="Deploy de aplicações com Docker e gerenciamento via Portainer.IO"
+                data-en="Application deployment with Docker and management via Portainer.IO">
+              Deploy de aplicações com Docker e gerenciamento via Portainer.IO
+            </li>
+            <li data-pt="Projetos elétricos completos em EPLAN Electric P8"
+                data-en="Complete electrical projects in EPLAN Electric P8">
+              Projetos elétricos completos em EPLAN Electric P8
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-company">CoolSeed</div>
+            <div class="job-role"
+                 data-pt="Desenhista Projetista Elétrico"
+                 data-en="Electrical Design Engineer">
+              Desenhista Projetista Elétrico
+            </div>
+            <div class="job-period">Mai/2022 — Out/2022</div>
+          </div>
+          <ul class="job-list">
+            <li data-pt="Projetos elétricos de máquinas de pós-colheita e secadores em AutoCAD e SolidWorks"
+                data-en="Electrical designs for post-harvest machines and dryers in AutoCAD and SolidWorks">
+              Projetos elétricos de máquinas de pós-colheita e secadores em AutoCAD e SolidWorks
+            </li>
+            <li data-pt="Automação com CLP WEG e IHM Weintek Easybuilder"
+                data-en="Automation with WEG PLC and Weintek Easybuilder HMI">
+              Automação com CLP WEG e IHM Weintek Easybuilder
+            </li>
+          </ul>
+        </div>
+
+        <div class="job">
+          <div class="job-header">
+            <div class="job-company">Lar Foods</div>
+            <div class="job-role"
+                 data-pt="Eletricista de Manutenção e Montagem"
+                 data-en="Maintenance & Assembly Electrician">
+              Eletricista de Manutenção e Montagem
+            </div>
+            <div class="job-period">Nov/2016 — Mai/2022</div>
+          </div>
+          <ul class="job-list">
+            <li data-pt="Projetos de automação em CLP Siemens e Allen-Bradley"
+                data-en="Automation projects with Siemens and Allen-Bradley PLCs">
+                Projetos de automação em CLP Siemens e Allen-Bradley
+            </li>
+            <li data-pt="Parametrização de inversores WEG, Schneider, Danfoss, ABB"
+                data-en="Parameterization of WEG, Schneider, Danfoss, ABB drives">
+                Parametrização de inversores WEG, Schneider, Danfoss, ABB
+            </li>
+            <li data-pt="Projetos elétricos utilizando software AutoCAD"
+                data-en="Electrical projects using AutoCAD software">
+                Projetos elétricos utilizando software AutoCAD
+            </li>
+            <li data-pt="Adequações de NR-10 e NR-12, montagem de painéis e infraestrutura elétrica"
+                data-en="NR-10 and NR-12 compliance, panel assembly, and electrical infrastructure">
+                Adequações de NR-10 e NR-12, montagem de painéis e infraestrutura elétrica
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- 03 — PROJETOS -->
+    <div class="section" id="sec-proj">
+      <div class="section-header">
+        <span class="section-num">03</span>
+        <h2 class="section-title" data-pt="Projetos" data-en="Projects">Projetos</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+        <div class="project-card">
+          <div class="project-icon">⚙️</div>
+          <div class="project-title"
+               data-pt="INVERSORES MVW3000 / CFW11"
+               data-en="MVW3000 / CFW11 DRIVES">
+               INVERSORES MVW3000 / MVW01 / CFW11
+          </div>
+          <div class="project-desc"
+               data-pt="Desenvolvimento de soluções industriais embarcadas com inversores WEG de média e baixa tensão, incluindo controle vetorial e escalar."
+               data-en="Embedded industrial solutions development with WEG medium and low voltage drives, including vector and scalar control.">
+               Desenvolvimento de soluções industriais embarcadas com inversores WEG de média e baixa tensão, incluindo controle vetorial e escalar.
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🔄</div>
+          <div class="project-title"
+               data-pt="LOAD SHARING — ESTEIRAS"
+               data-en="LOAD SHARING — CONVEYORS">
+               LOAD SHARING — ESTEIRAS
+          </div>
+          <div class="project-desc"
+               data-pt="Controle de esteiras com Load Sharing para distribuição equilibrada de carga entre múltiplos acionamentos."
+               data-en="Conveyor control with Load Sharing for balanced load distribution across multiple drives.">
+               Controle de esteiras com Load Sharing para distribuição equilibrada de carga entre múltiplos acionamentos.
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">🔬</div>
+          <div class="project-title"
+               data-pt="DUPLA FREQUÊNCIA — TESTES"
+               data-en="DUAL FREQUENCY — TESTING">
+            DUPLA FREQUÊNCIA — TESTES
+          </div>
+          <div class="project-desc"
+               data-pt="Injeção de Dupla Frequência para testes de motores em bancada, permitindo análise avançada de parâmetros."
+               data-en="Dual Frequency injection for bench motor testing, enabling advanced parameter analysis.">
+            Injeção de Dupla Frequência para testes de motores em bancada, permitindo análise avançada de parâmetros.
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">⚙️</div>
+          <div class="project-title"
+               data-pt="Exrtusoras"
+               data-en="EXTRUDERS">
+               Extrusoras
+          </div>
+          <div class="project-desc"
+               data-pt="Desenvolvimento de software para extrusoras com controle integrado com a linha de produção de tubos PVC."
+               data-en="">
+               Desenvolvimento de software para extrusoras com controle integrado com a linha de produção de tubos PVC.
+          </div>
+        </div>
+        <div class="project-card">
+          <div class="project-icon">📊</div>
+          <div class="project-title">IIoT DASHBOARD</div>
+          <div class="project-desc"
+               data-pt="Monitoramento em tempo real com Node-RED, Grafana e InfluxDB, containerizado em Docker para plantas industriais."
+               data-en="Real-time monitoring with Node-RED, Grafana, and InfluxDB, containerized in Docker for industrial plants.">
+            Monitoramento em tempo real com Node-RED, Grafana e InfluxDB, containerizado em Docker para plantas industriais.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 04 — HABILIDADES -->
+    <div class="section" id="sec-skills">
+      <div class="section-header">
+        <span class="section-num">04</span>
+        <h2 class="section-title" data-pt="Habilidades" data-en="Skills">Habilidades</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-group">
+          <div class="skill-group-title">PLC / CLP</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Siemens TIA Portal</span>
+            <span class="skill-tag">Allen-Bradley</span>
+            <span class="skill-tag">Delta</span>
+            <span class="skill-tag">Schneider</span>
+            <span class="skill-tag">CoDeSys</span>
+            <span class="skill-tag">Altus</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">SCADA / IHM</div>
+          <div class="skill-tags">
+            <span class="skill-tag">InduSoft</span>
+            <span class="skill-tag">AVEVA</span>
+            <span class="skill-tag">ScadaBR</span>
+            <span class="skill-tag">Weintek</span>
+            <span class="skill-tag">Siemens</span>
+            <span class="skill-tag">Delta HMI</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title" data-pt="Protocolos" data-en="Protocols">Protocolos</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Modbus TCP/IP</span>
+            <span class="skill-tag">EtherNet/IP</span>
+            <span class="skill-tag">OPC UA</span>
+            <span class="skill-tag">RS-485</span>
+            <span class="skill-tag">CANopen</span>
+            <span class="skill-tag">Profibus</span>
+            <span class="skill-tag">IEC 61850</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title">IIoT / DevOps</div>
+          <div class="skill-tags">
+            <span class="skill-tag">Node-RED</span>
+            <span class="skill-tag">Grafana</span>
+            <span class="skill-tag">Docker</span>
+            <span class="skill-tag">InfluxDB</span>
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">Portainer</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title"
+               data-pt="Linguagens / Programação"
+               data-en="Languages / Programming">
+            Linguagens / Programação
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">C/C++</span>
+            <span class="skill-tag">Ladder</span>
+            <span class="skill-tag">FBD</span>
+            <span class="skill-tag">ST</span>
+            <span class="skill-tag">SFC</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <div class="skill-group-title"
+               data-pt="Projetos / CAD"
+               data-en="Design / CAD">
+            Projetos / CAD
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag">EPLAN P8</span>
+            <span class="skill-tag">AutoCAD</span>
+            <span class="skill-tag">SolidWorks</span>
+            <span class="skill-tag">Wireshark</span>
+            <span class="skill-tag">Linux Server</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 05 — FORMAÇÃO -->
+    <div class="section" id="sec-edu">
+      <div class="section-header">
+        <span class="section-num">05</span>
+        <h2 class="section-title" data-pt="Formação" data-en="Education">Formação</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="edu-grid">
+        <div class="edu-card">
+          <div class="edu-degree" data-pt="Pós-Graduação" data-en="Post-Graduate">Pós-Graduação</div>
+          <div class="edu-course" data-pt="Engenharia de Automação" data-en="Automation Engineering">Engenharia de Automação</div>
+          <div class="edu-institution">UniSenai</div>
+          <div class="edu-period">06/2023 – 12/2024</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree" data-pt="Pós-Graduação" data-en="Post-Graduate">Pós-Graduação</div>
+          <div class="edu-course" data-pt="Engenharia da Computação" data-en="Computer Engineering">Engenharia da Computação</div>
+          <div class="edu-institution">UNINTER</div>
+          <div class="edu-period">01/2022 – 12/2022</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree" data-pt="Graduação" data-en="Bachelor's Degree">Graduação</div>
+          <div class="edu-course" data-pt="Engenharia de Controle e Automação" data-en="Control & Automation Engineering">Engenharia de Controle e Automação</div>
+          <div class="edu-institution">UAM</div>
+          <div class="edu-period">02/2021 – 12/2025</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree" data-pt="Graduação" data-en="Bachelor's Degree">Graduação</div>
+          <div class="edu-course" data-pt="Tecnologia em Manutenção Industrial" data-en="Industrial Maintenance Technology">Tecnologia em Manutenção Industrial</div>
+          <div class="edu-institution">UTFPR</div>
+          <div class="edu-period">08/2017 – 12/2021</div>
+        </div>
+        <div class="edu-card">
+          <div class="edu-degree" data-pt="Graduação" data-en="Bachelor's Degree">Graduação</div>
+          <div class="edu-course" data-pt="Tecnologia em Processos Gerenciais" data-en="Management Processes Technology">Tecnologia em Processos Gerenciais</div>
+          <div class="edu-institution">UniCesumar</div>
+          <div class="edu-period">02/2020 – 07/2021</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 06 — IDIOMAS -->
+    <div class="section" id="sec-lang">
+      <div class="section-header">
+        <span class="section-num">06</span>
+        <h2 class="section-title" data-pt="Idiomas" data-en="Languages">Idiomas</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="lang-grid">
+        <div class="lang-card">
+          <span class="lang-flag">🇧🇷</span>
+          <div>
+            <div class="lang-name" data-pt="Português" data-en="Portuguese">Português</div>
+            <div class="lang-level" data-pt="NATIVO" data-en="NATIVE">NATIVO</div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇺🇸</span>
+          <div>
+            <div class="lang-name" data-pt="Inglês" data-en="English">Inglês</div>
+            <div class="lang-level">B2 — <span data-pt="INTERMEDIÁRIO" data-en="INTERMEDIATE">INTERMEDIÁRIO</span></div>
+          </div>
+        </div>
+        <div class="lang-card">
+          <span class="lang-flag">🇪🇸</span>
+          <div>
+            <div class="lang-name" data-pt="Espanhol" data-en="Spanish">Espanhol</div>
+            <div class="lang-level">A1 — <span data-pt="INICIANTE" data-en="BEGINNER">INICIANTE</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 07 — CONTATO -->
+    <div class="section" id="sec-contact">
+      <div class="section-header">
+        <span class="section-num">07</span>
+        <h2 class="section-title" data-pt="Contato" data-en="Contact">Contato</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <a href="tel:+5545999936199" class="contact-item">
+          <span class="contact-icon">📞</span>
+          <div>
+            <div class="contact-label" data-pt="TELEFONE" data-en="PHONE">TELEFONE</div>
+            <div class="contact-value">+55 47 98918-4128</div>
+          </div>
+        </a>
+        <a href="mailto:hugo_ahmon@icloud.com" class="contact-item">
+          <span class="contact-icon">✉️</span>
+          <div>
+            <div class="contact-label">EMAIL</div>
+            <div class="contact-value">hugo_ahmon@icloud.com</div>
+          </div>
+        </a>
+        <a href="https://www.linkedin.com/in/hugo-ahmon-muniz-pacheco/" target="_blank" class="contact-item">
+          <span class="contact-icon">💼</span>
+          <div>
+            <div class="contact-label">LINKEDIN</div>
+            <div class="contact-value">hugo-ahmon-muniz-pacheco</div>
+          </div>
+        </a>
+        <a href="https://github.com/HugoAhmon" target="_blank" class="contact-item">
+          <span class="contact-icon">🐙</span>
+          <div>
+            <div class="contact-label">GITHUB</div>
+            <div class="contact-value">HugoAhmon</div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- ─── FOOTER ─── -->
   <footer>
-    <p>&copy; 2025 Hugo Muniz. Todos os direitos reservados.</p>
+    <p data-pt="© 2025 Hugo Muniz Pacheco — Todos os direitos reservados."
+       data-en="© 2025 Hugo Muniz Pacheco — All rights reserved.">
+      © 2026 Hugo Muniz Pacheco — Todos os direitos reservados.
+    </p>
   </footer>
 
-  <button id="scrollToTopBtn" title="Voltar ao topo">↑</button>
+  <!-- ─── SCROLL TO TOP ─── -->
+  <button id="scrollToTopBtn" title="↑">↑</button>
 
   <script src="script.js"></script>
 </body>
 </html>
-
-
