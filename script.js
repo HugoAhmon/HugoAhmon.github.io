@@ -1,36 +1,55 @@
-// Mostrar animações ao rolar
-const elements = document.querySelectorAll("header, section, footer");
+/* ─────────────────────────────────────────
+   script.js — Hugo Pacheco Portfolio
+   ───────────────────────────────────────── */
 
-const observer = new IntersectionObserver(
-  (entries) => {
+// ─── LANGUAGE SWITCHER ───
+let currentLang = 'pt';
+
+function setLang(lang) {
+  currentLang = lang;
+  document.documentElement.lang = lang === 'pt' ? 'pt-BR' : 'en-US';
+
+  // Atualiza todos os elementos com data-pt / data-en
+  document.querySelectorAll('[data-pt]').forEach(el => {
+    const text = el.getAttribute('data-' + lang);
+    if (text) el.innerHTML = text;
+  });
+
+  // Atualiza estado ativo dos botões de idioma
+  document.getElementById('langPT').classList.toggle('active', lang === 'pt');
+  document.getElementById('langEN').classList.toggle('active', lang === 'en');
+}
+
+// ─── THEME TOGGLE ───
+function toggleTheme() {
+  document.body.classList.toggle('light');
+  const btn = document.getElementById('themeToggle');
+  btn.textContent = document.body.classList.contains('light') ? '🌙' : '☀';
+}
+
+// ─── SCROLL REVEAL ───
+const sectionObserver = new IntersectionObserver(
+  entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        entry.target.classList.add("show");
+        entry.target.classList.add('visible');
       }
     });
   },
   { threshold: 0.1 }
 );
 
-elements.forEach(el => observer.observe(el));
-
-// Modo escuro
-const toggle = document.getElementById("darkModeToggle");
-toggle.addEventListener("click", () => {
-  document.body.classList.toggle("dark-mode");
+document.querySelectorAll('.section').forEach(section => {
+  sectionObserver.observe(section);
 });
 
-// Scroll to Top
-const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+// ─── SCROLL TO TOP ───
+const scrollToTopBtn = document.getElementById('scrollToTopBtn');
 
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 300) {
-    scrollToTopBtn.style.display = "block";
-  } else {
-    scrollToTopBtn.style.display = "none";
-  }
+window.addEventListener('scroll', () => {
+  scrollToTopBtn.style.display = window.scrollY > 400 ? 'block' : 'none';
 });
 
-scrollToTopBtn.addEventListener("click", () => {
-  window.scrollTo({ top: 0, behavior: "smooth" });
+scrollToTopBtn.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
 });
